@@ -23,6 +23,7 @@ services:
     volumes:
       - ./scripts/:/scripts
       - ./jwt.txt:/jwt.txt
+      - ./genesis/:/genesis
       - op_geth:/geth
     <<: *logging
 
